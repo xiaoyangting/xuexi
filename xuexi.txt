@@ -10,7 +10,7 @@
 	如果 git status 告诉你有文件被修改过, 用 git diff 可以查看修改内容, 有对比的
   1. 版本回退
 	1. HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id(版本号)。
-  	2. 穿梭前，用 git log 可以查看提交历史 (如果嫌弃输出信息太多, 可以 git log --pretty=oneline 输出简介版本信息)，以便确定要                    回退到哪个版本。
+  	2. 穿梭前，用 git log 可以查看提交历史 (如果嫌弃输出信息太多, 可以 git log --pretty=oneline 输出简介版本信息)，以便确定要回退到哪个版本。
   	3. 要重返未来，用 git reflog 查看命令历史，以便确定要回到未来的哪个版本。
   2. 撤销 
   	1. 如果当前你只是修改了, 还没 add 到暂缓区 那么 你就可以通过 git checkout -- 文件名 来撤销.(就是让这个文件回到最近一次	   git commit或git add时的状态。)
